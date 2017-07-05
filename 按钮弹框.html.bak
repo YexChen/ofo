@@ -17,10 +17,10 @@
 
 		buttons[0].onclick = dianji;
 		buttons[1].onclick = dianji;
-		console.log(buttons);
 
-		function dianji(){
-			alert("buttons down");
+		function dianji(e){
+			//alert(e.);
+			console.log(e.target.innerHTML);
 		}
 
 	</script>
