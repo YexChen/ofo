@@ -11,6 +11,7 @@
  <body>
 	<button>点我</button>
 	<button>点我撒</button>
+	<button>点我咯</button>
 	
 	<script>
 		var buttons = document.getElementsByTagName("button");
@@ -19,8 +20,19 @@
 		buttons[1].onclick = dianji;
 
 		function dianji(e){
-			//alert(e.);
-			console.log(e.target.innerHTML);
+			//alert(e.target.innerHTML);
+			console.log(e);
+
+			if (e.target.innerHTML == "点我撒")
+			{
+				alert("那你很棒棒哦");
+			}
+
+			else if (e.target.innerHTML == "点我")
+			{
+				alert("老哥稳成蛇");
+			}
+
 		}
 
 	</script>
